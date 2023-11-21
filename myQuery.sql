@@ -273,7 +273,7 @@ SELECT
     COUNT(r.`id`) AS total_reviews
 FROM
     `videogames` vg
-LEFT JOIN
+JOIN
     `reviews` r ON vg.`id` = r.`videogame_id`
 GROUP BY
     vg.`id`, vg.`name`, vg.`release_date`
